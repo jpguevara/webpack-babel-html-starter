@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var rootPath = process.cwd();
 
@@ -34,6 +35,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new HtmlWebpackPlugin({title:'Webpack Html Starter'})
     // new webpack.optimize.CommonsChunkPlugin({
     //   name: "vendor",
     //   filename: "vendor.bundle.js"
