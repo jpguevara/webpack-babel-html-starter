@@ -2,11 +2,15 @@
 var otherModule = require('./other-module');
 
 console.log('write your entry code here');
+
+// call other module functions
 otherModule.someFunction();
 
 
-let x = 0;
+const x = 0;
 let y = [1,2,3];
-let z = [...y];
-console.log('z: ', z);
+let z = [...y]; // use ES6 spread operator 
+
+// use "template literals" aka backtick strings 
+console.log(`z= ${z}`);
 

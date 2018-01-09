@@ -20,7 +20,7 @@ module.exports = {
       test: /\.js$/,
       loader: "babel-loader", // or "babel" because webpack adds the '-loader' automatically
       query: {
-        presets: ['es2015']
+        presets: ['env']
       },
       // "include" is commonly used to match the directories
       include: [
